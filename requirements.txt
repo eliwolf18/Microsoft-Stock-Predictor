@@ -6,3 +6,4 @@ plotly==5.15.0
 tensorflow==2.13.0
 yfinance==0.2.40
 setuptools
+scikit-learn
