@@ -42,7 +42,7 @@ def create_lstm_model(input_shape):
     return model
 
 # Function to train the model
-def train_lstm_model(model, X_train, y_train, epochs=50, batch_size=32):
+def train_lstm_model(model, X_train, y_train, epochs=20, batch_size=32):
     """
     Trains the LSTM model.
 
