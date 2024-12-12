@@ -65,7 +65,7 @@ def train_lstm_model(model, X_train, y_train, epochs=20, batch_size=32):
 
     history = model.fit(
     X_train, y_train,
-    epochs=50,  # You can adjust epochs
+    epochs=10,  # You can adjust epochs
     batch_size=32,
     validation_split=0.2,
     verbose=1
