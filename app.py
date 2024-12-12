@@ -7,6 +7,7 @@ from data import fetch_stock_data, preprocess_data
 from model import prepare_data_for_lstm, create_lstm_model, train_lstm_model
 import numpy as np
 from model import calculate_metrics
+from flask import Flask
 
 # Initializing the app
 app = dash.Dash(__name__)
@@ -442,4 +443,4 @@ def make_multi_day_prediction(n_clicks, start_date, end_date):
 
 # Running the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(host='0.0.0.0', port=5000)
