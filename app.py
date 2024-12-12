@@ -354,7 +354,7 @@ def make_multi_day_prediction(n_clicks, start_date, end_date):
             # Training the model (runtime training)
             input_shape = (X_train.shape[1], X_train.shape[2])
             model = create_lstm_model(input_shape)
-            history = train_lstm_model(model, X_train, y_train, epochs=50, batch_size=32)
+            history = train_lstm_model(model, X_train, y_train, epochs=20, batch_size=32)
 
             # Predicting the next 7 days
             num_days_to_predict = 7
